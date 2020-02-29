@@ -1,35 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "irl-world-substance",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "World Substance",
+  "description": "Expands the Minecraft's alchemy system.",
   "authors": [
-    "Me!"
+    "marengo_hue"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/marengohue/world-substance",
+    "sources": "https://github.com/marengohue/world-substance"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/irl-world-substance/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+      "net.irrelephant.worldsubstance.WorldSubstance::init"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=0.7.1",
     "fabric": "*",
     "fabric-language-kotlin": "*",
-    "minecraft": "1.15.x"
+    "minecraft": "1.16-alpha.20.9.a"
   },
   "suggests": {
     "flamingo": "*"
