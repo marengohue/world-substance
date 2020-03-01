@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "irl-world-substance",
+  "id": "worldsubstance",
   "version": "${version}",
 
   "name": "World Substance",
@@ -14,12 +14,15 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/irl-world-substance/icon.png",
+  "icon": "assets/worldsubstance/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.irrelephant.worldsubstance.WorldSubstance::init"
+    ],
+    "client": [
+      "net.irrelephant.worldsubstance.WorldSubstanceClient"
     ]
   },
   "depends": {

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "worldsubstance:block/plant_rosemary_stage0" },
+    "age=1": { "model": "worldsubstance:block/plant_rosemary_stage1" },
+    "age=2": { "model": "worldsubstance:block/plant_rosemary_stage2" },
+    "age=3": { "model": "worldsubstance:block/plant_rosemary_stage3" }
+  }
+}
