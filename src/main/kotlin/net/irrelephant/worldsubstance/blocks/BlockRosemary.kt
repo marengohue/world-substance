@@ -20,7 +20,7 @@ import net.minecraft.world.World
 import java.util.*
 import java.util.function.Consumer
 
-class BlockHerb(settings: Settings) : PlantBlock(settings) {
+class BlockRosemary(settings: Settings) : PlantBlock(settings) {
 
     init {
         defaultState = stateManager.defaultState.with(AGE, 0);
@@ -34,8 +34,7 @@ class BlockHerb(settings: Settings) : PlantBlock(settings) {
             Blocks.PODZOL,
             Blocks.DIRT,
             Blocks.COARSE_DIRT,
-            Blocks.GRASS,
-            Blocks.FARMLAND
+            Blocks.GRASS_BLOCK
         )
     }
 

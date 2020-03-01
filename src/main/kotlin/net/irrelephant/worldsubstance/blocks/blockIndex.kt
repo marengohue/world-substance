@@ -7,7 +7,7 @@ import net.minecraft.block.MaterialColor
 import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.registry.Registry
 
-val BLOCK_ROSEMARY = BlockHerb(
+val BLOCK_ROSEMARY = BlockRosemary(
     FabricBlockSettings
         .of(Material.PLANT)
         .materialColor(MaterialColor.EMERALD)
