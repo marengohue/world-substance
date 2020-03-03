@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "worldsubstance:block/plant_rosemary_stage1"
+    "crop": "worldsubstance:block/plant_rosemary/plant_rosemary_stage1"
   }
 }

@@ -10,6 +10,7 @@ import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvents
 import net.minecraft.state.StateManager
+import net.minecraft.state.property.BooleanProperty
 import net.minecraft.state.property.IntProperty
 import net.minecraft.util.ActionResult
 import net.minecraft.util.Hand
@@ -23,13 +24,16 @@ import java.util.function.Consumer
 class BlockRosemary(settings: Settings) : PlantBlock(settings) {
 
     init {
-        defaultState = stateManager.defaultState.with(AGE, 0);
+        defaultState = stateManager.defaultState
+            .with(IS_WILD, true)
+            .with(AGE, 0)
     }
 
     companion object {
         const val MAX_AGE = 3
         const val TICK_RATE = 10
         val AGE: IntProperty = IntProperty.of("age", 0, MAX_AGE)
+        val IS_WILD: BooleanProperty = BooleanProperty.of("wild")
         val GROWS_ON = setOf<Block>(
             Blocks.PODZOL,
             Blocks.DIRT,
@@ -112,7 +116,9 @@ class BlockRosemary(settings: Settings) : PlantBlock(settings) {
     }
 
     override fun appendProperties(builder: StateManager.Builder<Block, BlockState>?) {
-        builder!!.add(AGE)
+        builder!!
+            .add(AGE)
+            .add(IS_WILD)
     }
 
     override fun scheduledTick(state: BlockState?, world: ServerWorld?, pos: BlockPos?, random: Random?) {

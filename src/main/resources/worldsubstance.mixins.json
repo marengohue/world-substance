@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.irrelephant.worldsubstance.alchemy.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "BrewingRecipeRegistryAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
